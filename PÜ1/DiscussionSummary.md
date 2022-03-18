@@ -1,11 +1,12 @@
 ## Project background
 
 ### Zweck des Projekts
-Analyse und Auswertung der EKG-Daten basiernd auf der Leistung der Patientinnen.
+Das Projekt soll die Erhebung und AUswertung von Leistungsdaten an einem Fahrradergometer ermöglichen.
 
 
 ### Ziel des Projekts
-Vereinfachung und Automatisierung von Leistungstest, basiernd auf EKG-Daten, Leistungswerten und Patientinnen Daten. 
+Die Software zielt darauf ab, den Prozess der Leistungsdiagnostik zu vereinfachen und zu automatisieren.
+Dabei soll der aktuelle Gesundheitszustand, die Belastbarkeit und der Leistungszustand von Sportler:innen effizient untersucht werden.
 
 
 ### Hintergrundinformation
