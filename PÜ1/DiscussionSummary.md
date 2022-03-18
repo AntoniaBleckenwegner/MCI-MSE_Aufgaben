@@ -47,7 +47,7 @@ Beispiel von aufgezeichneten EKG Daten aus dem die Software dann zum Beispiel di
 
 ### Annahmen und Abhängigkeiten
 Grundsätzlich ist jeder Druchlauf als gültig anzusehen, solange kein Abbruchskriterium erfüllt wird.
-Sollte es jedoch zum Beispiel zu einer bedenklichen Herzfrequenz ist die AUswertung der Software ungültig.
+Sollte es jedoch zum Beispiel zu einer bedenklichen Herzfrequenz ist die Auswertung der Software ungültig.
 
 
 ### Design und Implementation
@@ -55,7 +55,7 @@ Die Software ist mit dem Ergometer verbunden und wird zunächst über eine Komma
 
 
 ## Risiken
-Sollte der Proband auf einen Abbruch des Leistungstests bei zum Beispiel einer Überschreitung von 90% der maximalen Herzfrequenz nicht reagieren, kann es zu ernsthaften Herz Kreislauf Problemen kommen. Weiters könnten falsch ausgewerterte Daten den Probanden falsche SChlüsse ziehen lassen und somit seine Gesundheit gefährden.
+Sollte der Proband auf einen Abbruch des Leistungstests bei zum Beispiel einer Überschreitung von 90% der maximalen Herzfrequenz nicht reagieren, kann es zu ernsthaften Herz Kreislauf Problemen kommen. Weiters könnten falsch ausgewerterte Daten den Probanden falsche Schlüsse ziehen lassen und somit seine Gesundheit gefährden.
 
 
 
