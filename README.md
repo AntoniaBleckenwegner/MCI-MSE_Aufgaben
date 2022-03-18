@@ -1,6 +1,6 @@
 # MCI-MSE_Aufgaben
 # Leistungsdiagnostik 
-Entwicklung einer Software zur Leistungsdiagnostik von Probanden auf einem Ergometer. Die erbrachte Leistung auf dem Ergometer wird in Daten umgewandelt, ausgewertet und visualisiert. 
+Es handelt sich um eine Software zur Leistungsdiagnostik von Probanden auf einem Ergometer. Dabei werden die Leistungsdaten von der Software ausgewertet und anschließend visualisiert.
 
 ## Installation
 
