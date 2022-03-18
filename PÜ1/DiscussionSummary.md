@@ -12,7 +12,7 @@ Dabei soll der aktuelle Gesundheitszustand, die Belastbarkeit und der Leistungsz
 ### Hintergrundinformation
 - Der Auftraggeber verfügt bereits über Ergometer, die die erfordlerichen Daten aufzeichnen können. 
 - Beim Leistungstest handelt es sich um einen 3 Minuten Test in dem ein bestimmtes Leistungsziel vorgegeben ist
-- vom Ergometer werden Puls und Leistung als Zeitreihe erfasst und gespeichert
+- Vom Ergometer werden Puls und Leistung als Zeitreihe erfasst und gespeichert
 
 
 
@@ -20,7 +20,7 @@ Dabei soll der aktuelle Gesundheitszustand, die Belastbarkeit und der Leistungsz
 ### Wer benutzt das System?
 Das System ist vorwiegend für den professionellen Gebrauch in sportmedizisnischen Einrichtungen entworfen.
 Grundsätzlich dient die Software dem Leistungsdiagnostiker als Tool, Leistungsdaten seiner Probanden effizient auswerten zu können.
-Dabei sollte der Diagnostiker fähig sein diverse Gründe zum Abbruch begutachten und manuell vermerken zu können.
+Dabei sollte der Diagnostiker jedoch nichtsdestotrotz fähig sein, diverse Gründe zum Abbruch begutachten und manuell vermerken zu können.
 
 
 
@@ -32,7 +32,7 @@ Dabei wird es sich größtenteils um Input von Personen handeln, die eine Leistu
 
 ## Projekt Zielsetzung
 ### Bekannte Geschäftsregeln
-Da es sich um ein medizinisches-Gerät handelt muss vor jeglichem Gebrauch auf Risiken und Nebenwirkungen aufmerksam gemacht werden. 
+Da es sich um ein medizinisches-Gerät handelt, muss vor jeglichem Gebrauch auf Risiken und Nebenwirkungen aufmerksam gemacht werden. 
 Weiters wird das System vor der Veröffentlichung mehrere Prüfverfahren durchlaufen.
 
 
@@ -47,15 +47,15 @@ Beispiel von aufgezeichneten EKG Daten aus dem die Software dann zum Beispiel di
 
 ### Annahmen und Abhängigkeiten
 Grundsätzlich ist jeder Druchlauf als gültig anzusehen, solange kein Abbruchskriterium erfüllt wird.
-Sollte es jedoch zum Beispiel zu einer bedenklichen Herzfrequenz ist die Auswertung der Software ungültig.
+Sollte die Software jedoch zum Beispiel eine bedenkliche Herzfrequenz erkennen, ist die Auswertung der Software ungültig und somit auch nicht verwendbar.
 
 
 ### Design und Implementation
-Die Software ist mit dem Ergometer verbunden und wird nach jetzigem Stand über eine Kommandozeile bedient.
+Die Software läuft auf einem Computer, welcher mit dem Ergometer verbunden ist und wird nach jetzigem Stand über eine Kommandozeile bedient.
 
 
 ## Risiken
-Sollte der Proband auf einen Abbruch des Leistungstests bei zum Beispiel einer Überschreitung von 90% der maximalen Herzfrequenz nicht reagieren, kann es zu ernsthaften Herz Kreislauf Problemen kommen. Weiters könnten falsch ausgewerterte Daten den Probanden falsche Schlüsse ziehen lassen und somit seine Gesundheit gefährden.
+Sollte der Proband auf einen Abbruch des Leistungstests bei zum Beispiel einer Überschreitung von 90% der maximalen Herzfrequenz nicht reagieren, kann es zu ernsthaften Herz-Kreislauf Problemen kommen. Weiters könnten falsch ausgewerterte Daten den Probanden falsche Schlüsse ziehen lassen und somit seine Gesundheit gefährden.
 
 
 
