@@ -10,17 +10,21 @@ Dabei soll der aktuelle Gesundheitszustand, die Belastbarkeit und der Leistungsz
 
 
 ### Hintergrundinformation
+- Der Auftraggeber verfügt bereits über Ergometer, die die erfordlerichen Daten aufzeichnen können. 
+- Beim Lesitungstest handelt es sich um einen 3 Minuten Test in dem ein bestimmtes Leistungsziel vorgegeben ist, welches 
 - vorhandene Patientendaten (gespeichert als Dateien)
-- funktionierender Ergometer
+
 
 
 ## Perspektiven
 ### Wer benutzt das System?
-Der Auftraggeber, sowie seine Kunden und die Probanden.
+Das System ist vorwiegend für den professionellen Gebrauch in sportmedizisnischen Einrichtungen entworfen.
+Grundsätzlich dient die Software dem Leistungsdiagnostiker als Tool, Leistungsdaten seiner Probanden effizient auswerten zu können.
+
 
 
 ### Wer sorgt für Input?
-Die Probanden.
+
 
 
 ## Projekt Zielsetzung
