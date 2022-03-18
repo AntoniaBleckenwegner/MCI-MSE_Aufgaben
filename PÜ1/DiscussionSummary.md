@@ -1,4 +1,4 @@
-## Project background
+## Projekt Hintergründe
 
 ### Zweck des Projekts
 Das Projekt soll die Erhebung und Auswertung von Leistungsdaten an einem Fahrradergometer ermöglichen.
