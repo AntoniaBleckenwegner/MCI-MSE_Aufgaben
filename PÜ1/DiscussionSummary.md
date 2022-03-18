@@ -24,12 +24,15 @@ Grundsätzlich dient die Software dem Leistungsdiagnostiker als Tool, Leistungsd
 
 
 ### Wer sorgt für Input?
+Die Software kann mit dem Input von Probanden sämtlichen ALters und gesundheitlichen Zustandes arbeiten. 
+Dabei wird es sich vor allem um Personen handeln, die eine Leistungsdiagnostik bei einem Experten durchführen
 
 
 
 ## Projekt Zielsetzung
 ### Bekannte Geschäftsregeln
-Da es sich um ein medizinisches-Gerät handelt muss auf Risiken und Nebenwirkungen aufmerksam gemacht werden. 
+Da es sich um ein medizinisches-Gerät handelt muss vor jeglichem Gebrauch auf Risiken und Nebenwirkungen aufmerksam gemacht werden. 
+Weiters wird das System vor der Veröffentlichung mehrere Prüfverfahren durchlaufen.
 
 ### System information and/or diagrams
 
@@ -47,15 +50,17 @@ Das Tool wird mit der Kommandozeile bedient und ein Nutzerinterface wird zunäch
 
 
 ## Risiken
-Es kann ungültigen Durchläufen kommen, z.B.: Puls 90% der maximalen Herzfrequenz. Dann wird der Durchlauf abgebrochen um den Probanden nicht zu gefährden. Risiko wäre den Versuch nicht abzubrechen, sprich der Proband setzt den Durchlauf fort. 
+Sollte der Proband auf einen Abbruch des Leistungstests bei zum Beispiel einer Überschreitung von 90% der maximalen Herzfrequenz nicht reagieren, kann es zu ernsthaften Herz Kreislauf Problemen kommen. Weiters könnten falsch ausgewerterte Daten den Probanden falsche SChlüsse ziehen lassen und somit seine Gesundheit gefährden.
+
 
 
 ## Bekannte Zukunftsverbesserungen
-Erweiterung durch ein Nutzerinterface. 
+Das Tool wird zunächst mit einer Kommandozeile bedient, allerdings könnte bei Bedarf ein Nutzerinterface integriert werden.
+Weiters wird auf sämtliche Bugs und weitere Probleme der Software immer sofort mit einer Überarbeitung reagiert.
 
 ## Referenzen
 
 - [Link zur Aufgabenstellung](tbd)
 
 ## Offene, ungelöste TBD Probleme
-Nicht bekannt.
+Derzeit sind noch keine Probleme bekannt.
