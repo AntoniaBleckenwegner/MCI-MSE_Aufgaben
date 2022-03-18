@@ -51,7 +51,7 @@ Sollte es jedoch zum Beispiel zu einer bedenklichen Herzfrequenz ist die Auswert
 
 
 ### Design und Implementation
-Die Software ist mit dem Ergometer verbunden und wird zunächst über eine Kommandozeile bedient.
+Die Software ist mit dem Ergometer verbunden und wird nach jetzigem Stand über eine Kommandozeile bedient.
 
 
 ## Risiken
