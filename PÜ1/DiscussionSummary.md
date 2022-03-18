@@ -40,7 +40,7 @@ Weiters wird das System vor der Veröffentlichung mehrere Prüfverfahren durchla
 Die Software liefert als Ergebnis der Leistungsdiagnostik unter anderem einen Plot, der die Herzrate und die Leistung über den Zeitraum darstellt.
 
 
-Beispiel von aufgezeichneten EKG Daten aus dem die Software dann zum Beispiel die Herzfrequenz bestimmt.
+Beispiel von aufgezeichneten EKG Daten aus dem die Software dann zum Beispiel die Herzfrequenz bestimmt:
 ![](ekg_example.png)
 
 
