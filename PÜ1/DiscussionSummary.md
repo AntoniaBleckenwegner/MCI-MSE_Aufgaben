@@ -1,7 +1,7 @@
 ## Project background
 
 ### Zweck des Projekts
-Das Projekt soll die Erhebung und AUswertung von Leistungsdaten an einem Fahrradergometer ermöglichen.
+Das Projekt soll die Erhebung und Auswertung von Leistungsdaten an einem Fahrradergometer ermöglichen.
 
 
 ### Ziel des Projekts
@@ -11,8 +11,8 @@ Dabei soll der aktuelle Gesundheitszustand, die Belastbarkeit und der Leistungsz
 
 ### Hintergrundinformation
 - Der Auftraggeber verfügt bereits über Ergometer, die die erfordlerichen Daten aufzeichnen können. 
-- Beim Lesitungstest handelt es sich um einen 3 Minuten Test in dem ein bestimmtes Leistungsziel vorgegeben ist, welches 
-- vorhandene Patientendaten (gespeichert als Dateien)
+- Beim Leistungstest handelt es sich um einen 3 Minuten Test in dem ein bestimmtes Leistungsziel vorgegeben ist
+- vom Ergometer werden Puls und Leistung als Zeitreihe erfasst und gespeichert
 
 
 
@@ -20,12 +20,13 @@ Dabei soll der aktuelle Gesundheitszustand, die Belastbarkeit und der Leistungsz
 ### Wer benutzt das System?
 Das System ist vorwiegend für den professionellen Gebrauch in sportmedizisnischen Einrichtungen entworfen.
 Grundsätzlich dient die Software dem Leistungsdiagnostiker als Tool, Leistungsdaten seiner Probanden effizient auswerten zu können.
+Dabei sollte der Diagnostiker fähig sein diverse Gründe zum Abbruch begutachten und manuell vermerken zu können.
 
 
 
 ### Wer sorgt für Input?
-Die Software kann mit dem Input von Probanden sämtlichen ALters und gesundheitlichen Zustandes arbeiten. 
-Dabei wird es sich vor allem um Personen handeln, die eine Leistungsdiagnostik bei einem Experten durchführen
+Die Software kann mit dem Input von Probanden sämtlichen Alters und gesundheitlichen Zustandes arbeiten. 
+Dabei wird es sich größtenteils um Input von Personen handeln, die eine Leistungsdiagnostik bei einem Experten durchführen lassen.
 
 
 
@@ -34,19 +35,23 @@ Dabei wird es sich vor allem um Personen handeln, die eine Leistungsdiagnostik b
 Da es sich um ein medizinisches-Gerät handelt muss vor jeglichem Gebrauch auf Risiken und Nebenwirkungen aufmerksam gemacht werden. 
 Weiters wird das System vor der Veröffentlichung mehrere Prüfverfahren durchlaufen.
 
-### System information and/or diagrams
 
-Beispiel von aufgezeichneten EKG Daten
+### System Informationen und Diagramme
+Die Software liefert als Ergebnis der Leistungsdiagnostik unter anderem einen Plot, der die Herzrate und die Leistung über den Zeitraum darstellt.
+
+
+Beispiel von aufgezeichneten EKG Daten aus dem die Software dann zum Beispiel die Herzfrequenz bestimmt.
 ![](ekg_example.png)
 
-Aus diesem muss die Herzrate bestimmt werden.
+
 
 ### Annahmen und Abhängigkeiten
-Es gibt Gründe zum Abbruch, welche der die Diagostikerin nach Begutachtung der Daten mauell vermerken sollte. 
+Grundsätzlich ist jeder Druchlauf als gültig anzusehen, solange kein Abbruchskriterium erfüllt wird.
+Sollte es jedoch zum Beispiel zu einer bedenklichen Herzfrequenz ist die AUswertung der Software ungültig.
 
 
 ### Design und Implementation
-Das Tool wird mit der Kommandozeile bedient und ein Nutzerinterface wird zunächst nicht benötigt. 
+Die Software ist mit dem Ergometer verbunden und wird zunächst über eine Kommandozeile bedient.
 
 
 ## Risiken
