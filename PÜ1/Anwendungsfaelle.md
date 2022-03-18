@@ -10,7 +10,7 @@
 ### UC 2.5. - Visualisierung der Daten
 
 
-|                                |  Beispiel                                                                                                                                         |
+|                                |  Erklärung                                                                                                                                         |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | Name und Identifikationsnummer | UC 2.5. - Visualisierung der Daten                                                                                                                |
 | Beschreibung                   |Nach Abschluss des Testes kann der Diagnostiker das Ergebnis visuell abfragen und relevante Informationen herauslesen. Die Auswertung kann dem Probanden zu Verfügung gestellt werden.   |
