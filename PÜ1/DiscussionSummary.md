@@ -18,7 +18,7 @@ Dabei soll der aktuelle Gesundheitszustand, die Belastbarkeit und der Leistungsz
 
 ## Perspektiven
 ### Wer benutzt das System?
-Das System ist vorwiegend für den professionellen Gebrauch in sportmedizisnischen Einrichtungen entworfen.
+Das System ist vorwiegend für den professionellen Gebrauch in sportmedizinischen Einrichtungen entworfen.
 Grundsätzlich dient die Software dem Leistungsdiagnostiker als Tool, Leistungsdaten seiner Probanden effizient auswerten zu können.
 Dabei sollte der Diagnostiker jedoch nichtsdestotrotz fähig sein, diverse Gründe zum Abbruch begutachten und manuell vermerken zu können.
 
@@ -37,7 +37,7 @@ Weiters wird das System vor der Veröffentlichung mehrere Prüfverfahren durchla
 
 
 ### System Informationen und Diagramme
-Die Software liefert als Ergebnis der Leistungsdiagnostik unter anderem einen Plot, der die Herzrate und die Leistung über den Zeitraum darstellt.
+Die Software liefert als Ergebnis der Leistungsdiagnostik unter anderem einen Plot, der die Herzrate und die Leistung über einen bestimmten Zeitraum darstellt.
 
 
 Beispiel von aufgezeichneten EKG Daten aus dem die Software dann zum Beispiel die Herzfrequenz bestimmt:
