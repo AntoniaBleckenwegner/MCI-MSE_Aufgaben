@@ -10,33 +10,9 @@ for i in range (1,4):
     power_data_watts = open(file_name).read().split("\n")   
     x = np.array(power_data_watts)
 
-# %% Erstellen des Plots
-    plt.title("Line graph")
+    plt.title("Line graph " + str(i))
     plt.plot(x, color="red")
+    plt.show()
 
-plt.show()
-
-
-# %%
-
-# %%
-
-# %%
-
-# %%
-
-# %%
-
-# %%
-
-# %%
-
-# %%
-
-# %%
-
-# %%
-
-# %%
 
 # %%
