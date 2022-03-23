@@ -49,6 +49,17 @@ Beispiel von aufgezeichneten EKG Daten aus dem die Software dann zum Beispiel di
 Grundsätzlich ist jeder Druchlauf als gültig anzusehen, solange kein Abbruchskriterium erfüllt wird.
 Sollte die Software jedoch zum Beispiel eine bedenkliche Herzfrequenz erkennen, ist die Auswertung der Software ungültig und somit auch nicht verwendbar.
 
+ecg_data_subject:
+
+subject_1:
+Es handelt sich um eine json Datei, die flgende Inforationen über den Probanden enthält:
+- subject id: Identifikationsnummer des Probande
+- test_power_w: maximal getretene Wattanzahl
+- birth year: Geburtsjahr
+- test_ duration_s: dauer in sekunden
+
+
+
 
 ### Design und Implementation
 Die Software läuft auf einem Computer, welcher mit dem Ergometer verbunden ist und wird nach jetzigem Stand über eine Kommandozeile bedient.
