@@ -6,13 +6,13 @@ import matplotlib.pyplot as plt
 
 
 for i in range (1,4):
-    file_name =  'input_data/power_data_1.txt'
-    power_data_watts = open(file_name).read().split("\n")
+    file_name =  'input_data/power_data_' + str(i) + '.txt'
+    power_data_watts = open(file_name).read().split("\n")   
     x = np.array(power_data_watts)
 
 # %% Erstellen des Plots
-plt.title("Line graph")
-plt.plot(x, color="red")
+    plt.title("Line graph")
+    plt.plot(x, color="red")
 
 plt.show()
 
