@@ -14,5 +14,5 @@ Team:
 - Antonia Bleckenwegner - 2110881008 - ba6240@mci4me.at
 
 ## License
-MIT 
+MIT  
 
