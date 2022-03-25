@@ -10,7 +10,7 @@ Dabei soll der aktuelle Gesundheitszustand, die Belastbarkeit und der Leistungsz
 
 
 ### Hintergrundinformation
-- Der Auftraggeber verfügt bereits über Ergometer, die die erfordlerichen Daten aufzeichnen können. 
+- Der Auftraggeber verfügt bereits über Ergometer, die die erforderlichen Daten aufzeichnen können. 
 - Beim Leistungstest handelt es sich um einen 3 Minuten Test in dem ein bestimmtes Leistungsziel vorgegeben ist
 - Vom Ergometer werden Puls und Leistung als Zeitreihe erfasst und gespeichert
 
@@ -34,7 +34,7 @@ Dabei wird es sich größtenteils um Input von Personen handeln, die eine Leistu
 ### Bekannte Geschäftsregeln
 Da es sich um ein medizinisches-Gerät handelt, muss vor jeglichem Gebrauch auf Risiken und Nebenwirkungen aufmerksam gemacht werden. 
 Weiters wird das System vor der Veröffentlichung mehrere Prüfverfahren durchlaufen.
-
+NOTE-JHU: Passt. Auch hierutner würde z.B. der Ablauf fallen: Erst wird der Test durchgeführt, dann von einer Expert:in mittels Software ausgewertet.
 
 ### System Informationen und Diagramme
 Die Software liefert als Ergebnis der Leistungsdiagnostik unter anderem einen Plot, der die Herzrate und die Leistung über einen bestimmten Zeitraum darstellt.
