@@ -49,14 +49,34 @@ Beispiel von aufgezeichneten EKG Daten aus dem die Software dann zum Beispiel di
 Grundsätzlich ist jeder Druchlauf als gültig anzusehen, solange kein Abbruchskriterium erfüllt wird.
 Sollte die Software jedoch zum Beispiel eine bedenkliche Herzfrequenz erkennen, ist die Auswertung der Software ungültig und somit auch nicht verwendbar.
 
-ecg_data_subject:
 
-subject_1:
-Es handelt sich um eine json Datei, die flgende Inforationen über den Probanden enthält:
-- subject id: Identifikationsnummer des Probande
+Input Dateien:
+
+ecg_data_subject:
+- Es handelt sich dabei um eine csv Datei (Excel Tabelle), in der Messwerte zum EKG gelistet sind.
+- Die Testdauer beträgt 180 Sekunden, wobei in dieser Taballe jeder Millisekunde ein Wert zugeordnet ist (insgesamt 180 000 verschiedene Werte in jeder Datei)
+- Was genau die Werte aussagen konnten wir bis jetzt noch nicht herausfinden
+- Für jeden der drei Probanden existiert eine eigene Datei
+
+
+power_data:
+- Es handel sich um eine txt Datei, in der unserer Einschätzung nach Wattanzahlen gelistet sind
+- ca. 200 Watt entspricht nämlich ungefähr den Wattanzahlen eines trainierten Radfahrers 
+- Das Messintervall beträgt dabei 1 Sekunde, weshalb in der Datei insgesamt 180 Werte enthalten sind
+- Für jeden der drei Probanden existiert eine eigene Datei
+
+subject:
+
+Es handelt sich um eine json Datei, die folgende essentielle Inforationen über den jeweiligen Probanden enthält:
+- subject id: Identifikationsnummer des Probanden
 - test_power_w: maximal getretene Wattanzahl
 - birth year: Geburtsjahr
-- test_ duration_s: dauer in sekunden
+- test_ duration_s: Dauer in sekunden
+
+
+
+
+
 
 
 
