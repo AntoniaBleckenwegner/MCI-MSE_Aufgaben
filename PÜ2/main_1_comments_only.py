@@ -21,7 +21,6 @@
 #%% UC 2.6 Manuelle Eingabe eines Abbruch-Kriteriums
 # evt individuelle maximale Herzfrequenz festlegen, bei der der Test abgebrochen wird
 
-
 #%% UC 2.7 Speichern der Daten
 # Daten in einer extra Datei speichern mit Befehl datei.write()..
 
