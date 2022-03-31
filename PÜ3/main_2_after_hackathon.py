@@ -1,29 +1,25 @@
 # UC 2.0
 
 #%% UC 2.1 Einlesen der Daten
-
-
-list_of_new_tests = []
-## Überprüfen ob Dateien vorhanden sind
-
 import os
 import pandas as pd
 
+list_of_new_tests = []
+## Überprüfen ob Dateien vorhanden sind
 folder_current = os.path.dirname(__file__) 
 folder_input_data = os.path.join(folder_current, 'input_data')
 for file in os.listdir(folder_input_data):
     
-    if file.endswith(".csv"):
+    if file.endswith(".csv"): #prüfen ob das File eine CSV ist, wenn ja werden die nächsten Zeilen ausgeführt
         file_name = os.path.join(folder_input_data, file)
         print(file_name)
         subject_id = file_name.split(".")[0][-1]
-        new_ecg_data= pd.read_csv(file_name)
+        new_ecg_data = pd.read_csv(file_name)
 ## Erstellen einer Liste von Tests, die zu verarbeiten sind
 
-        list_of_new_tests.append(new_ecg_data)
+        list_of_new_tests.append(new_ecg_data) #zu der Liste die neuen ECG Daten hinzufügen
 
-
-new_ecg_data["Subject_3"].plot()
+new_ecg_data["Subject_3"].plot() #die neuen ECK Daten darstellen
 
 #%% UC 2.2 Vorverarbeiten der Daten
 
@@ -134,14 +130,16 @@ if manual_termination != False:
 
 
 # Speichern der Daten
-data = {"User ID": subject_data["subject_id"], "Reason for test termation": manual_termination, "Average Heart Rate": average_hr_test, "Maximum Heart Rate": subject_max_hr, "Test Length (s)": len(power_data_watts), "Test Power (W)": subject_data["test_power_w"], "Average Power": peaks_downsampled["Power (Watt)"].mean()}
 
-json_data_to_save = json.dumps(data)
+def speichern():
+    data = {"User ID": subject_data["subject_id"], "Reason for test termation": manual_termination, "Average Heart Rate": average_hr_test, "Maximum Heart Rate": subject_max_hr, "Test Length (s)": len(power_data_watts), "Test Power (W)": subject_data["test_power_w"], "Average Power": peaks_downsampled["Power (Watt)"].mean()}
 
-folder_current = os.path.dirname(__file__) 
-folder_input_data = os.path.join(folder_current, 'result_data')
-results_file = os.path.join(folder_input_data, 'data.json')
+    json_data_to_save = json.dumps(data)
 
-with open(results_file, 'w', encoding='utf-8') as f:
+    folder_current = os.path.dirname(__file__) 
+    folder_input_data = os.path.join(folder_current, 'result_data')
+    results_file = os.path.join(folder_input_data, 'data.json')
+
+    with open(results_file, 'w', encoding='utf-8') as f:
     json.dump(json_data_to_save, f, ensure_ascii=False, indent=4)
 # %%
