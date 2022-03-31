@@ -71,9 +71,9 @@ Es handelt sich um eine json Datei, die folgende essentielle Inforationen über 
 - subject id: Identifikationsnummer des Probanden
 - test_power_w: maximal getretene Wattanzahl
 - birth year: Geburtsjahr
-- test_ duration_s: Dauer in sekunden
+- test_ duration_s: Dauer in Sekunden
 
-
+NOTE-JHU: Musterlösung
 
 
 
