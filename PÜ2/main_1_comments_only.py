@@ -8,8 +8,12 @@
 
 #%% UC 2.3 Analysieren der Daten auf Abbruchkriterien
 # falls der Moving-Average einen bestimmten Grenzwert übersteigt, soll das Programm abgebrochen werden
+# NOTE-JHU: Gute Idee, Moving Average brauchen wir auf jeden Fall in der Hausaufgabe zur Herzlungenmaschine. Hier optional.
+
 # Umsetzen mit einer if-Abfrage (if movingavg > bestimmterWert)...
 # eventuell Mitteilung printen
+
+
 
 #%% UC 2.4 Erstellen einer Zusammenfassung
 # Daten zusammenfassen und in z.B.: einem Array abspeichern
@@ -17,6 +21,7 @@
 #%% UC 2.5 Visualisierung der Daten
 # die ausgewerteten/zusammengefassten Daten, also den Array, in einem Plot anzeigen lassen
 # eventuell Umsetzung mittels DASH
+# NOTE-JHU: Gute Idee, DASH brauchen wir auf jeden Fall in der Hausaufgabe zur Herzlungenmaschine. Hier optional.
 
 #%% UC 2.6 Manuelle Eingabe eines Abbruch-Kriteriums
 # evt individuelle maximale Herzfrequenz festlegen, bei der der Test abgebrochen wird
