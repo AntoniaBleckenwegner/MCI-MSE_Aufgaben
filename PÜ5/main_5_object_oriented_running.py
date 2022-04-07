@@ -1,6 +1,7 @@
 # %%
 # Import external packages
 
+from statistics import variance
 import pandas as pd
 import neurokit2 as nk
 import json
@@ -86,6 +87,8 @@ class Test:
 
     def create_hr_data(self):
         """
+
+
         Load a dataframe of ecg_data to add additional attributes to the test object
 
         """
@@ -94,7 +97,7 @@ class Test:
 
         # Find peaks
         self.hr_peaks, self.info = nk.ecg_peaks(self.ecg_data["ECG"], sampling_rate=1000)
-
+        
         self.number_of_heartbeats = self.hr_peaks["ECG_R_Peaks"].sum()
 
         self.duration_test_min = self.hr_peaks.size/1000/60
@@ -107,6 +110,9 @@ class Test:
         
         self.maximum_hr = self.hr_peaks['average_HR_10s'].max()
 
+        
+        hrv_time = nk.hrv_time(self.hr_peaks, sampling_rate=100000, show=True)
+        self.varianz = hrv_time["HRV_MeanNN"].values[0]
         #self.peaks['average_HR_10s'].plot()
 
     def evaluate_termination(self):
@@ -140,9 +146,15 @@ class Test:
         print("Maximum HR was: " + str(self.maximum_hr))
         print("Was test terminated because exceeding HR: " + str(self.terminated))
         print("Was test terminated because for other reasons: " + str(self.manual_termination))
+        print("Durchschnitt: " + str(self.average_hr_test))
+        print("Varianz: " + str(self.varianz))
+
 
         print("________________")
         print(" \n")
+
+
+
 
     def ask_for_termination(self):
         """
@@ -236,4 +248,6 @@ for test in list_of_new_tests:                      # Alle Tests werden nacheina
     """
     
     iterator = iterator + 1
+
+
 
