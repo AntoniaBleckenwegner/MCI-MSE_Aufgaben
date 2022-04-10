@@ -14,10 +14,11 @@ import logging
 
 Log_Format = "%(levelname)s:%(asctime)s:%(message)s"
 
-logging.basicConfig(filename = "logdatafile.logg",
+logging.basicConfig(filename = "logfile.logg",
                     filemode = "w",
                     format = Log_Format, 
                     level = logging.INFO)
+
 
 
 # %%
