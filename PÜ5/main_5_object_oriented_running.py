@@ -6,6 +6,20 @@ import pandas as pd
 import neurokit2 as nk
 import json
 
+#%%
+
+# Logging
+
+import logging
+
+Log_Format = "%(levelname)s:%(asctime)s:%(message)s"
+
+logging.basicConfig(filename = "logdatafile.logg",
+                    filemode = "w",
+                    format = Log_Format, 
+                    level = logging.INFO)
+
+
 # %%
 # Definition of Classes
 
@@ -38,6 +52,8 @@ class Subject():
         self.subject_max_hr = 220 - (2022 - __subject_data["birth_year"])
         self.subject_id = __subject_data["subject_id"]
         self.test_power_w = __subject_data["test_power_w"]
+
+        logging.info('Data of Subject {}{}'.format(self.subject_id,' has been loaded'))
 
 class PowerData():
     """
@@ -166,6 +182,14 @@ class Test:
         if self.manual_termination != False:
             self.termination = True
         
+        
+        if str(self.manual_termination) != (''):
+            logging.info('Test of subject {} has been marked as invalid because of {}'.format(self.subject_id, self.manual_termination))
+            
+       
+
+        
+        
 
     def create_plot(self):
         """
@@ -239,9 +263,10 @@ for test in list_of_new_tests:                      # Alle Tests werden nacheina
     test.add_power_data(list_of_power_data[iterator])                           # Fügt die Daten hinzu
     test.evaluate_termination()
     test.create_plot()
-    test.create_summary()
     test.ask_for_termination()
+    test.create_summary()
     test.save_data()
+
     
     """
     Fügen Sie hier den Programmablauf ein, indem Sie die Methoden und Klassen von oben nutzen
@@ -251,3 +276,17 @@ for test in list_of_new_tests:                      # Alle Tests werden nacheina
 
 
 
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
