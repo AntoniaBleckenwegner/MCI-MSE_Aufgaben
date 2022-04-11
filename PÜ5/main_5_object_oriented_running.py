@@ -5,6 +5,9 @@ from statistics import variance
 import pandas as pd
 import neurokit2 as nk
 import json
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
 
 #%%
 
@@ -201,8 +204,12 @@ class Test:
         self.plot_data = self.plot_data.reset_index(drop=True)
 
         self.plot_data["Power (Watt)"] = pd.to_numeric(self.power_data.power_data_watts)
+        
         self.plot_data.plot()
     
+
+
+
 
     def save_data(self):
         """
@@ -223,6 +230,9 @@ class Test:
 
 
 
+
+
+
 # %% Eigentlich Ablauf der Event-Pipeline
 
 ## Einlesen der Daten
@@ -231,6 +241,7 @@ class Test:
 ### Erstellen leerer Liste zur Verarbeitung
 list_of_new_tests = []
 list_of_subjects = []
+
 list_of_power_data = []
 
 ### Füllen der Liste mit vorhandenen Daten
