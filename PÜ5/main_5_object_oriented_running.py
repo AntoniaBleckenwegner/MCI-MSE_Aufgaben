@@ -105,6 +105,7 @@ class Test:
         self.ecg_data = pd.read_csv(file_name)
         self.manual_termination = False
 
+
     def create_hr_data(self):
         """
 
@@ -185,6 +186,9 @@ class Test:
 
         if self.manual_termination != False:
             self.termination = True
+        
+
+
         
         
         if str(self.manual_termination) != (''):

@@ -125,6 +125,7 @@ class Test:
         
         self.number_of_heartbeats = self.hr_peaks["ECG_R_Peaks"].sum()
 
+
         self.duration_test_min = self.hr_peaks.size/1000/60
 
         self.average_hr_test = self.number_of_heartbeats / self.duration_test_min
@@ -138,9 +139,17 @@ class Test:
         
         hrv_time = nk.hrv_time(self.hr_peaks, sampling_rate=100000, show=True)
         self.varianz = hrv_time["HRV_MeanNN"].values[0]
-        #self.peaks['average_HR_10s'].plot()
+
+        
+        plt.legend(["moving average",'histogram', 'boxplot'])
+        plt.ylabel("distribution")
+        plt.grid(True, linestyle='-.')
+        plt.savefig('R-R Intervals Subject {}'.format(self.subject_id))
+        
+
 
     def evaluate_termination(self):
+
         """
         Evaluate the automatic termination of the test
         """
@@ -207,24 +216,20 @@ class Test:
         self.plot_data = pd.DataFrame()
         self.plot_data["Heart Rate"] = self.hr_peaks[self.ecg_data.index % 1000 == 0]["average_HR_10s"]  
         self.plot_data = self.plot_data.reset_index(drop=True)
-
         self.plot_data["Power (Watt)"] = pd.to_numeric(self.power_data.power_data_watts)
-        
         self.plot_data.plot()
-
-
-    def create_plotnew(self):
-        fig,ax=plt.subplots()
-        plt.plot()
         plt.title("Performance Test")
         plt.xlabel("time/s")
-        plt.ylabel("Watt/BPM")
-        plt.legend(['blue line'])
+
+
+        plt.ylabel("Watt & BPM")
         plt.grid(True, linestyle='-.')
-        plt.xticks(np.arange(0,180,25))
+        plt.savefig('Performance test Subject {}'.format(self.subject_id))
+        
 
 
-        plt.plot(self.hr_peaks)
+        
+
     
 
 
@@ -287,6 +292,8 @@ for file in os.listdir(folder_input_data):
 
 # %% Programmablauf
 
+
+
 iterator = 0                                        # Zähler, der die gefundenen Dateien und damit Tests zählt
 
 for test in list_of_new_tests:                      # Alle Tests werden nacheinander durchlaufen
@@ -294,8 +301,7 @@ for test in list_of_new_tests:                      # Alle Tests werden nacheina
     test.add_subject(list_of_subjects[iterator])    # Fügt einem Test die passenden Versuchspersonen hinzu
     test.add_power_data(list_of_power_data[iterator])                           # Fügt die Daten hinzu
     test.evaluate_termination()
-   # test.create_plot()
-    test.create_plotnew()
+    test.create_plot()
     test.ask_for_termination()
     test.create_summary()
     test.save_data()
@@ -313,4 +319,5 @@ for test in list_of_new_tests:                      # Alle Tests werden nacheina
 
 
  
+
 
