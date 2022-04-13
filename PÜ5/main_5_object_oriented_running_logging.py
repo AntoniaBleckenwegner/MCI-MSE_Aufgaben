@@ -141,7 +141,7 @@ class Test:
         self.varianz = hrv_time["HRV_MeanNN"].values[0]
 
         
-        plt.legend(["moving average",'histogram', 'boxplot'])
+        plt.legend(['moving average','histogram', 'boxplot'])
         plt.ylabel("distribution")
         plt.grid(True, linestyle='-.')
         plt.savefig('R-R Intervals Subject {}'.format(self.subject_id))
