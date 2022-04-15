@@ -251,7 +251,20 @@ class Test:
             json.dump(__data, f, ensure_ascii=False, indent=4)
 
 
+    def save_data_as_tree(self):
+        """
+        Store the test data in a JSON file with tree structure
+        """
+        #
+        #Daten in baumstrutkur speichern
 
+        __folder_current = os.path.dirname(__file__) 
+        __folder_input_data = os.path.join(__folder_current, 'result_data')
+        __file_name = 'result_data_subject_asTree' + str(self.subject_id) +'.json'
+        __results_file = os.path.join(__folder_input_data, __file_name)
+
+        with open(__results_file, 'w', encoding='utf-8') as f:
+            json.dump(__data, f, ensure_ascii=False, indent=4)
 
 
 
@@ -305,6 +318,7 @@ for test in list_of_new_tests:                      # Alle Tests werden nacheina
     test.ask_for_termination()
     test.create_summary()
     test.save_data()
+    #test.save_data_as_tree()
 
     
     """
