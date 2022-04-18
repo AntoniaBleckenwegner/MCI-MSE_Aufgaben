@@ -257,6 +257,11 @@ class Test:
         """
         #
         #Daten in baumstrutkur speichern
+        tree = tree() # neuer baum erstellen
+        tree.build_tree()
+        tree.add_child()
+        tree.get_level()
+        tree.print_tree()
 
         __folder_current = os.path.dirname(__file__) 
         __folder_input_data = os.path.join(__folder_current, 'result_data')
@@ -318,7 +323,7 @@ for test in list_of_new_tests:                      # Alle Tests werden nacheina
     test.ask_for_termination()
     test.create_summary()
     test.save_data()
-    #test.save_data_as_tree()
+    test.save_data_as_tree()
 
     
     """
