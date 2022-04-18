@@ -13,10 +13,6 @@ class TreeNode:
         self.children.append(child)
 
 
-
-
-
-
     def get_level(self):
         level=0
         p=self.parent
@@ -25,8 +21,6 @@ class TreeNode:
             p=p.parent
 
         return level
-
-
 
 
     def print_tree(self):
