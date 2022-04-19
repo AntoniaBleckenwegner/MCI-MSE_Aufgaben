@@ -224,7 +224,7 @@ class Test:
 
         plt.ylabel("Watt & BPM")
         plt.grid(True, linestyle='-.')
-        plt.savefig('Performance test Subject {}'.format(self.subject_id))
+        plt.savefig("result_data/" + 'Performance test Subject {}'.format(self.subject_id))
         
 
 
